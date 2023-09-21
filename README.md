@@ -18,6 +18,8 @@ To use this CDN script, follow these steps:
 - Activate the Worker:
    - When your Worker script is ready, activate it and assign it to the desired domain names.
 
+<br />
+
 - Download Required Packages:
 
 ```bash
