@@ -22,7 +22,7 @@ app.get('/images/:image', async (c) => {
     const { image } = c.req.param();
     c.header('Content-Type', 'image/jpeg');
 
-    const response = await fetch(`https://avatars.githubusercontent.com/u/${image}`);
+    const response = await fetch(`https://i.ibb.co/${image}/placeholder.png`);
 
     if (response.status !== 200) {
         return c.status(response.status);
