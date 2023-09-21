@@ -1,7 +1,5 @@
 # Cloudflare Workers CDN Script
 
-This repository contains a CDN script developed using Cloudflare Workers. It is designed to cache and distribute specified resources to improve website performance and reduce server load.
-
 ## Getting Started
 
 To use this CDN script, follow these steps:
