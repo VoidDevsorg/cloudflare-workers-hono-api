@@ -3,50 +3,47 @@
 ## Getting Started
 
 To use this CDN script, follow these steps:
+<br />
 
-1. **Create a Cloudflare Account**: If you don't have a Cloudflare account yet, [sign up for Cloudflare](https://www.cloudflare.com/) and create an account.
+- Create a Cloudflare Account:
+  - If you don't have a Cloudflare account yet, [sign up for Cloudflare](https://www.cloudflare.com/) and create an account.
 
-2. **Enable Cloudflare Workers**: You may need to enable Cloudflare Workers for your account. Once enabled, you can access the Workers section.
+- Enable Cloudflare Workers:
+  - You may need to enable Cloudflare Workers for your account. Once enabled, you can access the Workers section.
 
-3. **Create a Worker Script**:
+- Create a Worker Script:
    - Go to the Cloudflare Workers interface.
    - Create a new Worker and give it a name.
-   - Upload and process the necessary resources, if you developed your CDN script using the "hono" package.
 
-4. **Script Configuration**:
-   - Add explanatory comments to your script to describe its logic and customizable parameters.
-   - Customize your script to configure the resources you want to cache and define cache rules.
-
-5. **Activate the Worker**:
+- Activate the Worker:
    - When your Worker script is ready, activate it and assign it to the desired domain names.
 
-## Setup
+- Download Required Packages:
 
-### 1. Download Packages
 ```bash
 npm i -g wrangler
 # then
 npm i
 ```
 
-### 2. Update the `wrangler.toml`
+- Update the wrangler.toml Configuration File:
 
 ```toml
 name = "<YOUR-WORKERS-NAME>"
 ```
+Replace `<YOUR-WORKERS-NAME>` in `name = "<>"` with your chosen worker's name.
 
-### 3. Run the template
-```
-npm install
+- Run the Template:
+
+```bash
 npm run dev
 ```
 
-### 4. Deploy to Cloudflare Workers
-```
+- Deploy Your Worker to Cloudflare Workers:
+
+```bash
 npm run deploy
 ```
-
-- Enter your workers name to `name = "<>"` place.
 
 ## Example Usage for Get Image From GitHub
 
