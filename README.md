@@ -19,6 +19,7 @@ To use this CDN script, follow these steps:
    - When your Worker script is ready, activate it and assign it to the desired domain names.
 
 <br />
+<br />
 
 - Download Required Packages:
 
@@ -47,6 +48,9 @@ npm run dev
 npm run deploy
 ```
 
+<br />
+<br />
+
 ## Example Usage for Get Image From GitHub
 
 Here's an example of how to use the CDN script to serve resources like CSS, JavaScript, or image files:
@@ -65,6 +69,9 @@ app.get('/images/:image', async (c) => {
     }
 });
 ```
+
+<br />
+<br />
 
 ## License
 
