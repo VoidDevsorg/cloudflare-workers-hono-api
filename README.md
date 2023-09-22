@@ -1,11 +1,11 @@
-# Cloudflare Workers CDN Script
+# Cloudflare Workers  [Hono](https://hono.dev) API Script
 
 <br />
 <br />
 
 ## Getting Started
 
-To use this CDN script, follow these steps:
+To use this script, follow these steps:
 <br />
 
 - Create a Cloudflare Account:
@@ -54,22 +54,16 @@ npm run deploy
 <br />
 <br />
 
-## Example Usage for Get Image From GitHub
-
-Here's an example of how to use the CDN script to serve resources like CSS, JavaScript, or image files:
+## Example Usage
 
 ```javascript
-app.get('/images/:image', async (c) => {
-    const { image } = c.req.param();
-    c.header('Content-Type', 'image/jpeg');
+app.get('/user/:id', async (c) => {
+    const { id } = c.req.param();
+    c.header('Content-Type', 'application/json');
 
-    const response = await fetch(`https://avatars.githubusercontent.com/u/${image}`);
-
-    if (response.status !== 200) {
-        return c.status(response.status);
-    } else {
-        return c.body(response.body);
-    }
+    return c.json({
+        id
+    });
 });
 ```
 
